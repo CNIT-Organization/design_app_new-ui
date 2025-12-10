@@ -1,24 +1,32 @@
-# Cloud Native IT Solutions - ERP Design Theme
+# Cloud Native IT Solutions - ERP Design Theme (Oracle Redwood Edition)
 
 ## 🎨 Overview
 
-This is a custom ERPNext/Frappe theme designed specifically for **Cloud Native IT Solutions**. It transforms the standard ERPNext interface with company branding, modern colors, and professional styling.
+This is a custom **Oracle Redwood-inspired** ERPNext/Frappe theme designed specifically for **Cloud Native IT Solutions**. It transforms the standard ERPNext interface with modern glassmorphism effects, pastel colors, and professional styling.
+
+### 🆕 Version 2.0.0 - Oracle Redwood Design
+**NEW:** Complete redesign featuring glassmorphism, pastel colors, and modern UI elements inspired by Oracle's Redwood Design System.
 
 ---
 
 ## ✨ Features
 
-### 🎯 Complete Branding
-- Company logo in sidebar
-- Custom color scheme (Sky Blue, Purple, Green)
+### 🎯 Complete Branding (Oracle Redwood Style)
+- Company logo in glass-effect sidebar card
+- Modern color scheme (Purple-Blue #667EEA, Deep Purple #764BA2, Modern Green #48BB78)
+- Pastel color palette for widgets
 - Branded footer with copyright
-- Professional gradient effects
+- Professional gradients and glassmorphism effects
 
-### 🖌️ Modern Design
-- Dark sidebar with gradient
-- Light content area for readability
+### 🖌️ Modern Design (Glassmorphism)
+- **Purple-blue gradient sidebar** with glassmorphism
+- **Glass-effect cards** with backdrop blur throughout
+- **Gradient text** for dashboard numbers
+- **Rounded corners** (12px-25px) for modern aesthetic
+- **Pastel backgrounds** for forms and containers
 - Smooth animations and transitions
-- Hover effects on interactive elements
+- Hover effects with scale transformations
+- Button shine animations
 
 ### 📱 Fully Responsive
 - Desktop optimized
@@ -50,11 +58,12 @@ This is a custom ERPNext/Frappe theme designed specifically for **Cloud Native I
 - `script.js` - Branding in JS-generated HTML
 
 ### New Files
-- `cnit-branding.css` - Main branding stylesheet
+- `cnit-branding.css` - Oracle Redwood-inspired stylesheet (940+ lines)
 - `cnit-logo-white.svg` - Logo for dark backgrounds
 - `cnit-logo.svg` - Logo for light backgrounds
 - `CNIT_BRANDING_GUIDE.md` - Complete documentation
 - `QUICK_START.md` - Quick setup guide
+- `ORACLE_REDWOOD_IMPLEMENTATION.md` - Oracle Redwood design details
 - `COLOR_PALETTE.md` - Color reference
 
 ---
@@ -86,58 +95,76 @@ bench restart
 
 ---
 
-## 🎨 Brand Colors
+## 🎨 Brand Colors (Oracle Redwood Palette)
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| **Primary** (Sky Blue) | `#0EA5E9` | Buttons, links, active states |
-| **Secondary** (Purple) | `#8B5CF6` | Gradients, accents |
-| **Accent** (Green) | `#10B981` | Success, growth indicators |
-| **Dark** (Slate) | `#0F172A` | Sidebar, text |
-| **Light** (White) | `#F8FAFC` | Backgrounds |
+| **Primary** (Purple-Blue) | `#667EEA` | Buttons, links, active states, gradients |
+| **Secondary** (Deep Purple) | `#764BA2` | Gradients, sidebar backgrounds |
+| **Accent** (Modern Green) | `#48BB78` | Success, growth indicators |
+| **Dark** (Slate Gray) | `#2D3748` | Text, dark elements |
+| **Light** (Almost White) | `#F7FAFC` | Backgrounds, content areas |
+| **Pastel Blue** | `#A8D5E2` | Dashboard widget 1 |
+| **Pastel Green** | `#B8E6D5` | Dashboard widget 2 |
+| **Pastel Purple** | `#C5B9E8` | Dashboard widget 3 |
 
 ---
 
 ## 📋 Documentation
 
 - **[QUICK_START.md](./QUICK_START.md)** - 3-minute setup guide
+- **[ORACLE_REDWOOD_IMPLEMENTATION.md](./ORACLE_REDWOOD_IMPLEMENTATION.md)** - 🆕 Oracle Redwood design details
 - **[CNIT_BRANDING_GUIDE.md](./CNIT_BRANDING_GUIDE.md)** - Complete documentation
 - **[COLOR_PALETTE.md](./COLOR_PALETTE.md)** - Color reference guide
 
 ---
 
-## 🎯 Branding Applied To
+## 🎯 Branding Applied To (Oracle Redwood Style)
 
-✅ **Sidebar Navigation**
-- Dark gradient background
-- Logo placement
-- Company tagline
-- Hover effects with brand colors
+✅ **Sidebar Navigation (Glassmorphism)**
+- Purple-blue gradient background (#667EEA → #764BA2)
+- Glass-effect user card with backdrop blur
+- Logo placement within glass card
+- Menu items as glass cards
+- Hover effects with scale transformations
 
 ✅ **Tabs & Navigation**
-- Active states in Sky Blue
-- Hover effects
-- Smooth transitions
+- Active states in Modern Purple-Blue (#667EEA)
+- Smooth hover transitions
+- Border highlights
 
-✅ **Dashboard Widgets**
-- Colored numbers
-- Hover animations
-- Subtle glow effects
+✅ **Dashboard Widgets (Glass Cards)**
+- Glass-effect cards with backdrop blur
+- Gradient text for numbers (pastel → primary colors)
+- Colored top borders (3px)
+- Hover animations with scale and glow
+- Rounded corners (20px)
 
 ✅ **Buttons & Controls**
-- Gradient primary buttons
-- Branded hover states
-- Consistent styling
+- Primary buttons: Purple-blue gradient with shine animation
+- Secondary buttons: Glass effect with borders
+- Hover states with scale transformation (1.05x)
+- Smooth transitions (0.3s ease)
 
 ✅ **Forms & Inputs**
-- Focus states in brand colors
-- Validation colors
-- Consistent interactions
+- Rounded inputs (12px border-radius)
+- Pastel gradient backgrounds for containers
+- Enhanced focus states (3px border, primary color)
+- Validation colors with brand palette
+
+✅ **Tables**
+- Pastel gradient headers (blue → purple)
+- Glass-effect rows with hover states
+- Rounded corners (15px)
+
+✅ **Page Background**
+- Subtle pastel gradient
+- Multi-color blend (gray → pastel blue → pastel purple)
 
 ✅ **Footer**
 - Company copyright
-- Professional styling
-- Responsive text
+- Subtle gradient background
+- Professional styling with opacity
 
 ---
 
@@ -306,10 +333,23 @@ bench restart
 
 ## 📝 Changelog
 
+### Version 2.0.0 (2025-12-10) - Oracle Redwood Edition 🆕
+- ✅ **Complete redesign** with Oracle Redwood inspiration
+- ✅ **Glassmorphism effects** throughout interface
+- ✅ **Pastel color palette** implementation
+- ✅ **Purple-blue gradient sidebar** (#667EEA → #764BA2)
+- ✅ **Glass-effect cards** for widgets and containers
+- ✅ **Gradient text** for dashboard numbers
+- ✅ **Rounded corners** (12px-25px) for modern look
+- ✅ **Button shine animations**
+- ✅ **Hover transformations** with scale effects
+- ✅ **940+ lines of custom CSS**
+- ✅ **Updated documentation**
+
 ### Version 1.0.0 (2025-12-10)
 - ✅ Initial release
 - ✅ Complete branding implementation
-- ✅ CNIT color scheme applied
+- ✅ CNIT color scheme applied (original Sky Blue theme)
 - ✅ Logo placeholders created
 - ✅ Responsive design
 - ✅ Accessibility features
@@ -375,10 +415,22 @@ Before going live:
 
 ---
 
-**Version**: 1.0.0
+**Version**: 2.0.0 (Oracle Redwood Edition)
 **Last Updated**: 2025-12-10
 **Status**: ✅ Production Ready (after logo replacement)
 
 ---
 
-For detailed information, see [CNIT_BRANDING_GUIDE.md](./CNIT_BRANDING_GUIDE.md)
+## 🚀 What's Next?
+
+1. **Replace logo placeholders** with your actual company logos
+2. **Build and deploy**: `bench build --app design_app && bench restart`
+3. **Test thoroughly** on all devices and browsers
+4. **Enjoy your modern Oracle Redwood-inspired ERP!** 🎉
+
+---
+
+For detailed information:
+- **Quick Setup**: [QUICK_START.md](./QUICK_START.md)
+- **Oracle Redwood Details**: [ORACLE_REDWOOD_IMPLEMENTATION.md](./ORACLE_REDWOOD_IMPLEMENTATION.md)
+- **Full Guide**: [CNIT_BRANDING_GUIDE.md](./CNIT_BRANDING_GUIDE.md)

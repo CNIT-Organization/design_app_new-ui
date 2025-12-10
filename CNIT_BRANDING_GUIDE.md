@@ -2,7 +2,7 @@
 
 ## 🎨 Overview
 
-This document explains how the Cloud Native IT Solutions branding has been implemented in your ERPNext system.
+This document explains how the **Oracle Redwood-inspired** Cloud Native IT Solutions branding has been implemented in your ERPNext system, featuring modern glassmorphism effects and a professional pastel color palette.
 
 ---
 
@@ -14,8 +14,9 @@ This document explains how the Cloud Native IT Solutions branding has been imple
    - Added new CSS file for branding
 
 2. **[css_varaibles.scss](design_app/public/css/css_varaibles.scss)**
-   - Added CNIT brand color variables
-   - Updated primary brand color to Sky Blue (#0EA5E9)
+   - Added CNIT brand color variables (Oracle Redwood-inspired)
+   - Updated primary brand color to Modern Purple-Blue (#667EEA)
+   - Added secondary Deep Purple (#764BA2) and Modern Green accent (#48BB78)
 
 3. **[style.css](design_app/public/css/style.css)**
    - Updated tab colors to CNIT primary
@@ -26,9 +27,10 @@ This document explains how the Cloud Native IT Solutions branding has been imple
    - Improved HTML semantics
 
 ### ✅ New Files Created
-1. **[cnit-branding.css](design_app/public/css/cnit-branding.css)**
-   - Complete branding stylesheet
-   - Company-specific overrides
+1. **[cnit-branding.css](design_app/public/css/cnit-branding.css)** (940+ lines)
+   - Oracle Redwood-inspired glassmorphism theme
+   - Pastel color palette implementation
+   - Modern UI elements (glass cards, gradient text, animations)
    - Responsive and accessible design
 
 2. **[cnit-logo-white.svg](design_app/public/images/cnit-logo-white.svg)**
@@ -41,28 +43,46 @@ This document explains how the Cloud Native IT Solutions branding has been imple
 
 ---
 
-## 🎨 Brand Color Palette
+## 🎨 Brand Color Palette - Oracle Redwood Inspired
 
 ### Primary Colors
 ```css
---cnit-primary: #0EA5E9;     /* Sky Blue - Cloud/Tech */
---cnit-secondary: #8B5CF6;   /* Purple - Innovation */
---cnit-accent: #10B981;      /* Green - Growth/Success */
---cnit-dark: #0F172A;        /* Dark Slate - Professional */
---cnit-light: #F8FAFC;       /* Almost White - Clean */
+--cnit-primary: #667EEA;     /* Modern Purple-Blue - Innovation & Tech */
+--cnit-secondary: #764BA2;   /* Deep Purple - Professional Elegance */
+--cnit-accent: #48BB78;      /* Modern Green - Growth/Success */
+--cnit-dark: #2D3748;        /* Slate Gray - Professional */
+--cnit-light: #F7FAFC;       /* Almost White - Clean */
 ```
 
 ### Gradient
 ```css
---cnit-gradient: linear-gradient(135deg, #0EA5E9 0%, #8B5CF6 100%);
+--cnit-gradient: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+```
+
+### Pastel Colors for Glassmorphism
+```css
+--pastel-blue: #A8D5E2;      /* Dashboard Widget 1 */
+--pastel-purple: #C5B9E8;    /* Dashboard Widget 3 */
+--pastel-pink: #FFB5C2;      /* Accent Elements */
+--pastel-green: #B8E6D5;     /* Dashboard Widget 2 */
+--pastel-peach: #FFD4B2;     /* Accent Elements */
+--pastel-yellow: #FFF4A3;    /* Highlights */
+```
+
+### Glassmorphism Variables
+```css
+--glass-bg: rgba(255, 255, 255, 0.95);           /* Background */
+--glass-border: rgba(255, 255, 255, 0.18);       /* Border */
+--glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);  /* Shadow */
 ```
 
 ### Usage Examples
-- **Primary Blue (#0EA5E9)**: Buttons, links, active states, borders
-- **Secondary Purple (#8B5CF6)**: Gradients, secondary actions
-- **Accent Green (#10B981)**: Success states, positive indicators
-- **Dark Slate (#0F172A)**: Text, sidebar background
-- **Light (#F8FAFC)**: Backgrounds, cards
+- **Primary Purple-Blue (#667EEA)**: Buttons, links, active states, gradients
+- **Secondary Deep Purple (#764BA2)**: Gradients, sidebar backgrounds
+- **Accent Modern Green (#48BB78)**: Success states, positive indicators
+- **Slate Gray (#2D3748)**: Text, dark elements
+- **Pastel Colors**: Dashboard widgets, cards, glass effects
+- **Light (#F7FAFC)**: Backgrounds, content areas
 
 ---
 
@@ -73,8 +93,8 @@ This document explains how the Cloud Native IT Solutions branding has been imple
 #### 1. Sidebar Logo (White Version)
 - **Location**: Top of left sidebar
 - **File**: `cnit-logo-white.svg`
-- **Size**: Auto-scaled to 80% width
-- **Background**: Dark gradient (#0F172A to #1E293B)
+- **Size**: Auto-scaled to 90% width within glass card
+- **Background**: Purple-blue gradient (#667EEA to #764BA2) with glassmorphism effect
 
 #### 2. Mobile Menu Logo
 - **Location**: Top navbar on mobile
@@ -114,46 +134,72 @@ convert your-logo-dark.png cnit-logo.svg
 
 ---
 
-## 🎯 Branding Applied To
+## 🎯 Branding Applied To - Oracle Redwood Design
 
-### 1. Sidebar Navigation
-- ✅ Dark gradient background with CNIT colors
-- ✅ Logo at top
+### 1. Sidebar Navigation (Glassmorphism)
+- ✅ **Purple-blue gradient background** (#667EEA to #764BA2)
+- ✅ **Glass-effect user card** with backdrop blur and rounded corners
+- ✅ Logo displayed within glass card
 - ✅ Company tagline below user info
-- ✅ CNIT primary color on hover and selection
-- ✅ Smooth transitions and animations
+- ✅ **Menu items as glass cards** with hover animations
+- ✅ Smooth transitions and scaling effects
+- ✅ Box shadows for depth perception
 
 ### 2. Tabs & Navigation
-- ✅ Active tabs use CNIT Sky Blue (#0EA5E9)
-- ✅ Hover effects with brand colors
-- ✅ Border highlights in brand colors
+- ✅ Active tabs use Modern Purple-Blue (#667EEA)
+- ✅ Smooth hover transitions with brand colors
+- ✅ Border highlights in primary color
 
-### 3. Dashboard Widgets
-- ✅ Widget 1: CNIT Primary Blue
-- ✅ Widget 2: CNIT Accent Green
-- ✅ Widget 3: CNIT Secondary Purple
-- ✅ Widget 4-5: Complementary colors
-- ✅ Hover effects with subtle glow
+### 3. Dashboard Widgets (Glass Cards)
+- ✅ **Glass-effect cards** with backdrop blur
+- ✅ **Gradient text for numbers**:
+  - Widget 1: Pastel Blue to Primary Purple-Blue
+  - Widget 2: Pastel Green to Accent Green
+  - Widget 3: Pastel Purple to Secondary Purple
+- ✅ Colored top borders (3px) for visual distinction
+- ✅ Hover effects with subtle glow and scale
+- ✅ Rounded corners (20px) for modern look
 
 ### 4. Buttons & Controls
-- ✅ Primary buttons: CNIT gradient
-- ✅ Secondary buttons: CNIT primary border
-- ✅ Hover states with brand colors
-- ✅ Focus states with CNIT primary
+- ✅ **Primary buttons**: Purple-blue gradient with shine animation
+- ✅ **Secondary buttons**: Glass effect with borders
+- ✅ Hover states with scale transformation (1.05x)
+- ✅ Focus states with CNIT primary glow
+- ✅ Smooth transitions (all properties 0.3s ease)
 
 ### 5. Forms & Inputs
-- ✅ Focus borders: CNIT primary
+- ✅ **Rounded inputs** (12px border-radius)
+- ✅ **Pastel background gradients** for containers
+- ✅ Focus borders: CNIT primary with 3px width
 - ✅ Focus glow: CNIT primary with transparency
 - ✅ Validation states with brand colors
 
-### 6. Scrollbars
+### 6. Tables
+- ✅ **Pastel gradient headers** (blue to purple)
+- ✅ **Glass-effect rows** with hover states
+- ✅ Rounded corners (15px)
+- ✅ Border styling with glass borders
+
+### 7. Modals & Dialogs
+- ✅ **Glassmorphism effect** with backdrop blur
+- ✅ Rounded corners (25px)
+- ✅ Box shadows for elevation
+- ✅ Smooth animations
+
+### 8. Scrollbars
 - ✅ Custom scrollbar with CNIT gradient
 - ✅ Hover state in primary color
+- ✅ Smooth transitions
 
-### 7. Footer
+### 9. Page Background
+- ✅ **Subtle pastel gradient** for main content area
+- ✅ Multi-color gradient (light gray → pastel blue → pastel purple)
+- ✅ Clean, professional appearance
+
+### 10. Footer
 - ✅ Company copyright notice
 - ✅ Subtle gradient background
-- ✅ Professional styling
+- ✅ Professional styling with opacity
 
 ---
 
@@ -403,9 +449,22 @@ For issues or questions:
 
 ## 📝 Changelog
 
-### Version 1.0.0 (2025)
+### Version 2.0.0 (2025-12-10) - Oracle Redwood Design
+- ✅ **Complete redesign** with Oracle Redwood inspiration
+- ✅ **Glassmorphism effects** throughout the interface
+- ✅ **Pastel color palette** for modern professional look
+- ✅ **Purple-blue gradient sidebar** (#667EEA to #764BA2)
+- ✅ **Glass-effect cards** for dashboard widgets
+- ✅ **Gradient text** for numbers and headings
+- ✅ **Rounded corners** (12px-25px) for modern aesthetic
+- ✅ **Shine animations** on buttons
+- ✅ **Hover transformations** with scale effects
+- ✅ **Backdrop blur effects** (blur(10px))
+- ✅ **940+ lines of custom CSS**
+
+### Version 1.0.0 (2025-12-10)
 - ✅ Initial branding implementation
-- ✅ CNIT color palette applied
+- ✅ CNIT color palette applied (original Sky Blue theme)
 - ✅ Logo placeholders created
 - ✅ Responsive design implemented
 - ✅ Accessibility features added

@@ -8,10 +8,11 @@ Your ERPNext system has been fully branded with **Cloud Native IT Solutions** id
 
 ## ✅ Changes Applied
 
-### 1. **Brand Colors** 🎨
-- **Primary**: Sky Blue (#0EA5E9) - Cloud/Tech theme
-- **Secondary**: Purple (#8B5CF6) - Innovation
-- **Accent**: Green (#10B981) - Growth/Success
+### 1. **Brand Colors** 🎨 - Oracle Redwood Inspired
+- **Primary**: Modern Purple-Blue (#667EEA) - Innovation & Tech
+- **Secondary**: Deep Purple (#764BA2) - Professional Elegance
+- **Accent**: Modern Green (#48BB78) - Growth/Success
+- **Theme**: Glassmorphism with pastel colors
 
 ### 2. **Files Modified** 📝
 - `hooks.py` - Company metadata
@@ -20,7 +21,7 @@ Your ERPNext system has been fully branded with **Cloud Native IT Solutions** id
 - `script.js` - Accessibility improvements
 
 ### 3. **Files Created** ✨
-- `cnit-branding.css` - Complete branding stylesheet
+- `cnit-branding.css` - Oracle Redwood-inspired glassmorphism stylesheet (940+ lines)
 - `cnit-logo-white.svg` - Sidebar logo (PLACEHOLDER)
 - `cnit-logo.svg` - General logo (PLACEHOLDER)
 - `CNIT_BRANDING_GUIDE.md` - Detailed documentation
@@ -58,36 +59,53 @@ bench restart
 
 ### Step 3: Test
 Open your ERP and check:
-- ✅ Sidebar shows logo
-- ✅ Colors are Sky Blue theme
-- ✅ Tabs use new colors
-- ✅ Dashboard widgets styled
+- ✅ Sidebar shows gradient background (purple-blue) with glassmorphism
+- ✅ Logo displayed with glass-effect card
+- ✅ Dashboard widgets with gradient text and glass effects
+- ✅ Buttons with gradient backgrounds and animations
+- ✅ Forms with modern rounded inputs and pastel backgrounds
 - ✅ Footer shows company name
 
 ---
 
-## 🎨 Where Branding Appears
+## 🎨 Where Branding Appears - Oracle Redwood Design
 
 ### Sidebar (Left Panel)
-- Dark gradient background
-- Your logo at top
+- **Purple-blue gradient background** (#667EEA to #764BA2)
+- **Glassmorphism user card** with backdrop blur
+- Your logo at top with glass effect
 - "Cloud Native IT Solutions" tagline
-- Sky Blue highlights on hover/active
+- Menu items as glass cards with hover animations
 
 ### Navigation Tabs
-- Active tabs: Sky Blue underline
-- Hover effects in brand colors
+- Active tabs: Purple-Blue (#667EEA) underline
+- Smooth hover transitions with brand colors
 
 ### Dashboard Widgets
-- Number widgets in brand colors
-- Hover effects with glow
+- **Glass-effect cards** with backdrop blur
+- **Gradient text** for numbers (pastel blue, green, purple)
+- Colored top borders for visual distinction
+- Hover effects with subtle glow
+
+### Forms & Inputs
+- **Rounded inputs** (12px border-radius)
+- Pastel background gradients
+- Focus animations with primary color
+- Glass-effect containers
 
 ### Buttons
-- Primary buttons: Blue-Purple gradient
-- Hover animations
+- **Primary buttons**: Purple-blue gradient with shine animation
+- **Secondary buttons**: Glass effect with borders
+- Smooth hover transformations
+
+### Tables
+- **Pastel gradient headers**
+- Glass-effect rows
+- Modern rounded corners
 
 ### Footer
 - "© 2025 Cloud Native IT Solutions"
+- Subtle gradient background
 
 ---
 
@@ -121,15 +139,23 @@ bench restart
 
 ---
 
-## 🎯 Brand Color Reference
+## 🎯 Brand Color Reference - Oracle Redwood Palette
 
 ```css
 /* Use these colors in custom developments */
-var(--cnit-primary)      /* #0EA5E9 - Sky Blue */
-var(--cnit-secondary)    /* #8B5CF6 - Purple */
-var(--cnit-accent)       /* #10B981 - Green */
-var(--cnit-dark)         /* #0F172A - Dark Slate */
-var(--cnit-gradient)     /* Blue to Purple */
+var(--cnit-primary)      /* #667EEA - Modern Purple-Blue */
+var(--cnit-secondary)    /* #764BA2 - Deep Purple */
+var(--cnit-accent)       /* #48BB78 - Modern Green */
+var(--cnit-dark)         /* #2D3748 - Slate Gray */
+var(--cnit-light)        /* #F7FAFC - Almost White */
+var(--cnit-gradient)     /* Purple-Blue Gradient */
+
+/* Pastel Colors for Widgets */
+var(--pastel-blue)       /* #A8D5E2 */
+var(--pastel-purple)     /* #C5B9E8 */
+var(--pastel-pink)       /* #FFB5C2 */
+var(--pastel-green)      /* #B8E6D5 */
+var(--pastel-peach)      /* #FFD4B2 */
 ```
 
 ---
@@ -184,12 +210,15 @@ See [CNIT_BRANDING_GUIDE.md](./CNIT_BRANDING_GUIDE.md) for:
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Brand Colors | ✅ Applied | Sky Blue theme |
+| Brand Colors | ✅ Applied | Oracle Redwood palette |
+| Glassmorphism | ✅ Complete | Backdrop blur effects |
 | Logo Placeholders | ⚠️ Replace | Use your actual logos |
-| Sidebar Styling | ✅ Complete | Dark gradient |
-| Navigation Tabs | ✅ Complete | Brand colors |
-| Dashboard Widgets | ✅ Complete | Colored & animated |
-| Buttons | ✅ Complete | Gradient & effects |
+| Sidebar Styling | ✅ Complete | Purple-blue gradient |
+| Navigation Tabs | ✅ Complete | Modern colors |
+| Dashboard Widgets | ✅ Complete | Glass cards + gradient text |
+| Buttons | ✅ Complete | Gradient + shine animation |
+| Forms & Inputs | ✅ Complete | Rounded + pastel backgrounds |
+| Tables | ✅ Complete | Pastel gradient headers |
 | Footer | ✅ Complete | Company branding |
 | Responsive | ✅ Complete | Mobile-friendly |
 | Accessibility | ✅ Complete | WCAG compliant |

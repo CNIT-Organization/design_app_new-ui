@@ -2,15 +2,15 @@ $input-height: 28px !default;
 
 :root,
 [data-theme="light"] {
-	/* Cloud Native IT Solutions Brand Colors */
-	--cnit-primary: #0EA5E9;        /* Sky Blue - Cloud/Tech */
-	--cnit-secondary: #8B5CF6;      /* Purple - Innovation */
-	--cnit-accent: #10B981;         /* Green - Growth/Success */
-	--cnit-dark: #0F172A;           /* Dark Slate - Professional */
-	--cnit-light: #F8FAFC;          /* Almost White - Clean */
-	--cnit-gradient: linear-gradient(135deg, #0EA5E9 0%, #8B5CF6 100%);
+	/* Oracle Redwood Inspired - Modern Pastel Colors */
+	--cnit-primary: #667EEA;        /* Modern Purple-Blue */
+	--cnit-secondary: #764BA2;      /* Deep Purple */
+	--cnit-accent: #48BB78;         /* Modern Green */
+	--cnit-dark: #2D3748;           /* Slate Gray */
+	--cnit-light: #F7FAFC;          /* Almost White - Clean */
+	--cnit-gradient: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
 
-	--brand-color: #0EA5E9;         /* Updated to CNIT Sky Blue */
+	--brand-color: #667EEA;         /* Updated to Modern Purple-Blue */
 
 	--pink-900: #5B1E34;
 	--pink-800: #702440;
