@@ -630,11 +630,11 @@ function getsidebaritems() {
 
     $(`<div class="container navbar">
     <div class="menu-btn mobilemenu">
-        <a class="navbar-brand navbar-home" href="/app">
+        <a class="navbar-brand navbar-home" href="/app" title="Cloud Native IT Solutions">
             <img class="app-logo" style="width: 55px"
-                src="${frappe.boot.app_logo_url}">
+                src="${frappe.boot.app_logo_url}" alt="Cloud Native IT Solutions Logo">
         </a>
-        <button class="nav-link showmobilemenu" onclick="togglemobilenav()"><i
+        <button class="nav-link showmobilemenu" onclick="togglemobilenav()" aria-label="Toggle navigation menu"><i
                 class="fa-solid fa-bars"></i></button>
     </div>
      <div class="collapse navbar-collapse show justify-content-end"> 
@@ -709,11 +709,11 @@ function getsidebaritems() {
     <div class="userlogo">
         <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-navbar-user dropdown-mobile center">
-                        <a class="nav-link"  href="#" onclick="return false;">
+                        <a class="nav-link"  href="#" onclick="return false;" title="User Profile">
                             ${frappe.avatar(frappe.session.user, "avatar-medium")}
                             <span class="user-name-sub-text username">${frappe.session.user}</span>
-                            <span class="user-name-sub-text emailtext">${frappe.session.user_email}</span> 
-                        </a> 
+                            <span class="user-name-sub-text emailtext">${frappe.session.user_email}</span>
+                        </a>
                     </li>
         </ul>
     </div>`).appendTo($(".mainhead"));

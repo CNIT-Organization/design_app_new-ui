@@ -1,10 +1,10 @@
 from . import __version__ as app_version
 
 app_name = "design_app"
-app_title = "Design App"
-app_publisher = "Haroon Abbas"
-app_description = "Design App"
-app_email = "walkin.logic@gmail.com"
+app_title = "Cloud Native IT Solutions Design"
+app_publisher = "Cloud Native IT Solutions"
+app_description = "Custom ERP UI Theme for Cloud Native IT Solutions"
+app_email = "info@cloudnative-it.com"
 app_license = "MIT"
 
 # Includes in <head>
@@ -14,7 +14,7 @@ app_license = "MIT"
 # app_include_css = "/assets/design_app/css/design_app.css"
 # app_include_js = "/assets/design_app/js/design_app.js"
 
-app_include_css = ["/assets/design_app/css/style.css","/assets/design_app/css/css_varaibles.scss"]
+app_include_css = ["/assets/design_app/css/css_varaibles.scss", "/assets/design_app/css/style.css", "/assets/design_app/css/cnit-branding.css"]
 
 app_include_js = [
     #"list.bundle.js",

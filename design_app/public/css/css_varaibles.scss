@@ -2,7 +2,15 @@ $input-height: 28px !default;
 
 :root,
 [data-theme="light"] {
-	--brand-color: #0089FF;
+	/* Cloud Native IT Solutions Brand Colors */
+	--cnit-primary: #0EA5E9;        /* Sky Blue - Cloud/Tech */
+	--cnit-secondary: #8B5CF6;      /* Purple - Innovation */
+	--cnit-accent: #10B981;         /* Green - Growth/Success */
+	--cnit-dark: #0F172A;           /* Dark Slate - Professional */
+	--cnit-light: #F8FAFC;          /* Almost White - Clean */
+	--cnit-gradient: linear-gradient(135deg, #0EA5E9 0%, #8B5CF6 100%);
+
+	--brand-color: #0EA5E9;         /* Updated to CNIT Sky Blue */
 
 	--pink-900: #5B1E34;
 	--pink-800: #702440;
@@ -260,7 +268,7 @@ $input-height: 28px !default;
 	--border-radius-lg: 12px;
 	--border-radius-full: 999px;
 
-	--primary-color: #2490EF;
+	--primary-color: #0EA5E9;  /* Updated to CNIT Primary */
 	--btn-height: 30px;
 
 	// input

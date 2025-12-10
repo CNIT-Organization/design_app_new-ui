@@ -1,0 +1,367 @@
+/**
+ * Cloud Native IT Solutions - Custom Branding Styles
+ * This file contains all company-specific branding overrides
+ * Author: Cloud Native IT Solutions
+ * Last Updated: 2025
+ */
+
+/* ========================================
+   SIDEBAR BRANDING
+   ======================================== */
+
+/* Gradient background for sidebar */
+body .main-section #main-body .layout-main.mainapp {
+    background: linear-gradient(180deg, var(--cnit-dark) 0%, #1E293B 100%) !important;
+}
+
+/* Logo area at top of sidebar */
+.userlogo {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.userlogo::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    background: url('/assets/design_app/images/cnit-logo-white.svg') center/contain no-repeat;
+    opacity: 0.95;
+}
+
+/* Company tagline below user info */
+.userlogo .emailtext::after {
+    content: 'Cloud Native IT Solutions';
+    display: block;
+    text-align: center;
+    font-size: 9px;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+/* Collapsed sidebar logo */
+body.closed .userlogo::before {
+    width: 60%;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   NAVIGATION & TABS
+   ======================================== */
+
+/* Active tab indicator - CNIT Primary color */
+.layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item:hover,
+.layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item.active {
+    border-bottom: 3px solid var(--cnit-primary) !important;
+}
+
+/* Tab link active state */
+.layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item a:hover,
+.layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item.active a {
+    color: var(--cnit-primary) !important;
+}
+
+/* Main tab active state with gradient */
+.layout-main-tabs-wrapper .nav-tabs .nav-link.active,
+.layout-main-tabs-wrapper .nav-tabs .nav-item.show .nav-link {
+    background-color: #F1F5F9;
+    border-color: var(--cnit-primary) var(--cnit-primary) #E2E8F0;
+    border-top: 2px solid var(--cnit-primary);
+}
+
+/* ========================================
+   DASHBOARD WIDGETS
+   ======================================== */
+
+/* Widget 1 - CNIT Primary Blue */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:nth-child(1) .widget-body .widget-content .number,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:nth-child(1) .widget-body .widget-content .number {
+    color: var(--cnit-primary) !important;
+    font-weight: 700;
+}
+
+/* Widget 2 - CNIT Accent Green */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:nth-child(2) .widget-body .widget-content .number,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:nth-child(2) .widget-body .widget-content .number {
+    color: var(--cnit-accent) !important;
+    font-weight: 700;
+}
+
+/* Widget 3 - CNIT Secondary Purple */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:nth-child(3) .widget-body .widget-content .number,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:nth-child(3) .widget-body .widget-content .number {
+    color: var(--cnit-secondary) !important;
+    font-weight: 700;
+}
+
+/* Widget 4 - Orange (kept for variety) */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:nth-child(4) .widget-body .widget-content .number,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:nth-child(4) .widget-body .widget-content .number {
+    color: #F59E0B !important;
+    font-weight: 700;
+}
+
+/* Widget 5 - Cyan (kept for variety) */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:nth-child(5) .widget-body .widget-content .number,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:nth-child(5) .widget-body .widget-content .number {
+    color: #06B6D4 !important;
+    font-weight: 700;
+}
+
+/* Add subtle glow effect to widgets */
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.pagecontainer .page-content .dashboard-page .layout-main-section .dashboard-view .widget-group .widget-group-body .number-widget-box:hover,
+.pagecontainer .page-content .dashboard .dashboard-graph .widget-group .widget-group-body .number-widget-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(14, 165, 233, 0.15);
+    border-color: rgba(14, 165, 233, 0.2);
+}
+
+/* ========================================
+   SIDEBAR INTERACTIONS
+   ======================================== */
+
+/* Selected sidebar item with CNIT colors */
+.standard-sidebar .standard-sidebar-item.selected,
+.desk-sidebar .standard-sidebar-item.selected {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.15) 0%, rgba(14, 165, 233, 0.05) 100%) !important;
+    border-left: 3px solid var(--cnit-primary);
+    padding-left: 12px;
+}
+
+/* Hover effect with smooth transition */
+.standard-sidebar .standard-sidebar-item:hover,
+.desk-sidebar .standard-sidebar-item:hover {
+    background-color: rgba(14, 165, 233, 0.08) !important;
+    transform: translateX(2px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Sidebar item icons - add CNIT primary color on hover */
+.desk-sidebar .standard-sidebar-item:hover .sidebar-item-icon svg {
+    --icon-stroke: var(--cnit-primary);
+}
+
+/* ========================================
+   BUTTONS & CONTROLS
+   ======================================== */
+
+/* Primary buttons with CNIT gradient */
+.btn-primary {
+    background: var(--cnit-gradient) !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+}
+
+/* Secondary buttons */
+.btn-secondary {
+    border-color: var(--cnit-primary) !important;
+    color: var(--cnit-primary) !important;
+}
+
+.btn-secondary:hover {
+    background: var(--cnit-primary) !important;
+    color: white !important;
+}
+
+/* ========================================
+   NAVBAR BRANDING
+   ======================================== */
+
+/* Add subtle branding to top navbar */
+.mainapppage .navbar {
+    border-bottom: 2px solid var(--cnit-primary);
+}
+
+/* Notification icon color */
+.nav-link.notifications-icon:hover svg {
+    --icon-stroke: var(--cnit-primary);
+}
+
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+/* Page title area with subtle accent */
+.page-head {
+    border-left: 4px solid var(--cnit-primary);
+    padding-left: 15px;
+}
+
+/* ========================================
+   FOOTER BRANDING
+   ======================================== */
+
+/* Company footer */
+.layout-footer {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.layout-footer::after {
+    content: '© 2025 Cloud Native IT Solutions | All Rights Reserved';
+    display: block;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: #64748B;
+    font-size: 11px;
+    border-top: 1px solid #E2E8F0;
+    background: linear-gradient(to right, rgba(14, 165, 233, 0.02), rgba(139, 92, 246, 0.02));
+}
+
+/* ========================================
+   LOADING & ANIMATIONS
+   ======================================== */
+
+/* Loading state with CNIT colors */
+.preloader {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+}
+
+/* Smooth transitions for all interactive elements */
+.sidebar-item-container,
+.nav-item,
+.btn,
+a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   FORM ELEMENTS
+   ======================================== */
+
+/* Focus states with CNIT primary */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--cnit-primary) !important;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1) !important;
+}
+
+/* Checkbox checked state */
+.checkbox input[type="checkbox"]:checked + .label-area {
+    color: var(--cnit-primary);
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+/* Custom scrollbar with CNIT colors */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--cnit-primary), var(--cnit-secondary));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cnit-primary);
+}
+
+/* ========================================
+   BADGES & INDICATORS
+   ======================================== */
+
+/* Status indicators with CNIT accent */
+.indicator.blue,
+.indicator-pill.blue {
+    background-color: var(--cnit-primary) !important;
+}
+
+.indicator.green,
+.indicator-pill.green {
+    background-color: var(--cnit-accent) !important;
+}
+
+/* ========================================
+   TOOLTIPS & POPOVERS
+   ======================================== */
+
+.tooltip-inner {
+    background-color: var(--cnit-dark);
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: var(--cnit-dark);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Adjust logo size on mobile */
+    .userlogo::before {
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+
+    /* Smaller footer text on mobile */
+    .layout-footer::after {
+        font-size: 9px;
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    /* Hide branding elements when printing */
+    .userlogo::before,
+    .userlogo .emailtext::after,
+    .layout-footer::after {
+        display: none !important;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY ENHANCEMENTS
+   ======================================== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .standard-sidebar .standard-sidebar-item.selected,
+    .desk-sidebar .standard-sidebar-item.selected {
+        border-left-width: 4px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ========================================
+   END OF CNIT BRANDING STYLES
+   ======================================== */

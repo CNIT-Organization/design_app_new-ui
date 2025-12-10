@@ -387,7 +387,7 @@ body .main-section #main-body .layout-main.mainapp .navbar-collapse .navbar-nav 
 
 .layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item:hover,
 .layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item.active {
-    border-bottom: 2px solid #4f46e5;
+    border-bottom: 2px solid #0EA5E9;
 }
 
 .layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item a {
@@ -401,7 +401,7 @@ body .main-section #main-body .layout-main.mainapp .navbar-collapse .navbar-nav 
 .layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item a:hover,
 .layout-main-tabs-wrapper .subtabs ul.nav.nav-tabs .nav-item.active a {
     text-decoration: none;
-    color: #4F46E5;
+    color: #0EA5E9;
     opacity: 1;
 }
 

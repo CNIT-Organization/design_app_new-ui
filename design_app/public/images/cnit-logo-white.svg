@@ -1,0 +1,30 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud Native IT Solutions Logo Placeholder -->
+  <!-- Replace this with your actual company logo -->
+
+  <!-- Cloud Icon -->
+  <g opacity="0.9">
+    <path d="M45 35C45 35 43 25 35 25C32 22 28 22 25 23C23 18 18 15 13 15C6 15 2 20 2 27C2 27 0 27 0 29C0 34 3 38 8 38H45C50 38 53 35 53 30C53 26 50 23 45 23V35Z" fill="url(#cloudGradient)" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- IT/Tech Elements -->
+  <rect x="60" y="20" width="3" height="28" rx="1.5" fill="white" opacity="0.8"/>
+  <rect x="68" y="20" width="3" height="28" rx="1.5" fill="white" opacity="0.8"/>
+  <rect x="76" y="20" width="3" height="28" rx="1.5" fill="white" opacity="0.8"/>
+
+  <!-- Company Name Text -->
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white" letter-spacing="1.2">
+    CLOUD NATIVE IT
+  </text>
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#94A3B8" letter-spacing="2">
+    SOLUTIONS
+  </text>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
